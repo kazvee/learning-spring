@@ -21,3 +21,5 @@ build/
 !**/src/test/**/build/
 
 .vscode/
+
+.env
