@@ -17,7 +17,7 @@ import lombok.ToString;
 public class Room {
 
     @Id
-    @Column(name = "room_id" )
+    @Column(name = "room_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     @Column(name = "name")
