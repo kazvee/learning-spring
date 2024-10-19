@@ -7,6 +7,7 @@
   <title>Landon Hotel | Rooms</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
 <body>
@@ -33,11 +34,13 @@
   </header>
   <main class="container">
     <h1>Rooms</h1>
-    <table class="table">
+    <table class="table table-bg">
       <thead>
-        <th scope="col">Number</th>
-        <th scope="col">Name</th>
-        <th scope="col">Bed Info</th>
+        <tr>
+          <th scope="col">Number</th>
+          <th scope="col">Name</th>
+          <th scope="col">Bed Info</th>
+        </tr>
       </thead>
       <tbody>
         <tr th:each="room : ${rooms}">

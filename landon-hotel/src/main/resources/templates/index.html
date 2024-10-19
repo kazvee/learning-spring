@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landon Hotel | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Header">
+            <div class="container-fluid">
+                <a class="navbar-brand" th:href="@{/}">Landon Hotel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav"
+                    aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="site-nav">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" th:href="@{/rooms}">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" th:href="@{/occupancy}">Occupancy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="text-center">Welcome to Landon Hotel</h1>
+
+        <div class="d-flex justify-content-center mb-4">
+            <div class="card">
+                <div class="d-flex justify-content-center">
+                    <img th:src="@{/images/hotel.jpg}" alt="A scenic view of Landon Hotel located in Spring Valley"
+                        class="card-img-top img-fluid" style="width: 60%;" />
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text mt-4">Nestled in the tranquil Spring Valley beneath the majestic Java
+                        mountain,</p>
+                    <p class="card-text mt-4">our serene surroundings will make your heart Spring Boot with joy.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="navbar navbar-expand-md navbar-dark bg-dark py-4">
+        <div class="container d-flex justify-content-center" style="color: white;">
+            <span>
+                Made with 💚 &amp;
+                <a href="https://github.com/kazvee/learning-spring" target="_blank">this
+                    code</a>
+                &amp;
+                a lovely hotel image by
+                <a
+                    href="https://pixabay.com/users/zuluzulu-2223810/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1567013">Hans-Joachim
+                    Müller-le Plat</a>
+                from
+                <a
+                    href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1567013">Pixabay</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
